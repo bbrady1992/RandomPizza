@@ -1,35 +1,12 @@
-from json import load
-from random import choice
-from time import sleep
+from utils import *
 
-toppings = load(open('toppings.json'))
-meats = toppings['meats']
-non_meats = toppings['non-meats']
+def generate_random_pizza():
+    print("")
+    crusts, cheese_levels, sauces, sauce_levels, toppings = load_options()
+    num_toppings = get_num_toppings(len(toppings))
+    crust, cheese_level, sauce, sauce_level, my_toppings = pick_options(crusts,
+            cheese_levels, sauces, sauce_levels, toppings, num_toppings)
+    print_report(crust, cheese_level, sauce, sauce_level, my_toppings)
 
-num_meats = int(raw_input("How many meat toppings? "))
-num_veggies = int(raw_input("How many non-meat toppings? "))
-
-your_toppings = []
-for meat in range(0, num_meats):
-    random_meat = choice(meats)
-    your_toppings.append(random_meat)
-    meats.remove(random_meat)
-
-for non_meat in range(0, num_veggies):
-    random_non_meat = choice(non_meats)
-    your_toppings.append(random_non_meat)
-    non_meats.remove(random_non_meat)
-
-randomized_toppings = your_toppings
-for toppings in your_toppings:
-    random_topping = choice(your_toppings)
-    randomized_toppings.append(random_topping)
-    your_toppings.remove(random_topping)
-
-print("Randomizing toppings.....")
-sleep(2)
-print("\n\nYour toppings are:")
-for topping in randomized_toppings:
-    print(topping)
-
-
+if __name__ == "__main__":
+    generate_random_pizza()
