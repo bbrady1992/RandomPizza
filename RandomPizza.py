@@ -7,6 +7,7 @@ sys.path.append('ui')
 from ui import Ui_Form
 sys.path.append('resources')
 from Pizza import Pizza
+import signal
 
 class PizzaApp(QObject):
     ###
@@ -83,5 +84,6 @@ class PizzaApp(QObject):
 
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
     app = PizzaApp()
     app.run()
