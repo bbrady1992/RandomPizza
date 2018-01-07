@@ -1,0 +1,45 @@
+{
+  "toppings": [
+    "Pepperoni",
+    "Italian Sausage",
+    "Meatball",
+    "Ham",
+    "Bacon",
+    "Grilled Chicken",
+    "Beef",
+    "Pork",
+    "Mushrooms",
+    "Roasted Spinach",
+    "Red Onions",
+    "Mediterranean Black Olives",
+    "Green Bell Peppers",
+    "Banana Peppers",
+    "Pineapple",
+    "Jalapeno Peppers",
+    "Roma Tomatoes"
+  ],
+  "crusts": [
+    "Original Pan Pizza",
+    "Hand Tossed Pizza",
+    "Thin 'N Crispy",
+    "Original Stuffed Crust"
+  ],
+  "sauce": [
+    "Classic Marinara",
+    "Barbeque",
+    "Creamy Garlic Parmesan",
+    "Buffalo"
+  ],
+  "sauce level": [
+    "None",
+    "Light",
+    "Regular",
+    "Extra"
+  ],
+  "cheese level": [
+    "None",
+    "Light",
+    "Regular",
+    "Extra"
+  ]
+}

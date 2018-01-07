@@ -23,10 +23,10 @@ class PizzaApp(QObject):
     @pyqtSlot()
     def on_browse_button_clicked(self):
         fname = QtWidgets.QFileDialog.getOpenFileName(self.window, 'Select file',
-                filter = "*.json")
+                'menus', filter = "*.json")
         if fname[0]:
-            self.options_file = basename(fname[0])
-            self.ui.optionsLineEdit.setText(self.options_file)
+            self.options_file = fname[0]
+            self.ui.optionsLineEdit.setText(basename(self.options_file))
 
     @pyqtSlot('QString')
     def on_options_file_set(self, arg1):
@@ -63,7 +63,7 @@ class PizzaApp(QObject):
 
     def __init__(self):
         super(PizzaApp, self).__init__()
-        self.options_file = 'dominos.json'
+        self.options_file = 'menus/Dominos.json'
         self.crusts = None
         self.cheese_levels = None
         self.sauces = None
