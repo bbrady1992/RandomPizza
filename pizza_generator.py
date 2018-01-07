@@ -1,5 +1,5 @@
-from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
+from PyQt5 import QtWidgets
+from PyQt5.QtCore import QObject,  pyqtSlot
 import sys
 from os.path import basename
 from pizza_ui import Ui_Form
