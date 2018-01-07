@@ -78,7 +78,7 @@ class PizzaApp(QObject):
         self.ui.setupUi(self.window)
         self.window.show()
         self.setup_connections()
-        self.ui.optionsLineEdit.setText(self.options_file)
+        self.ui.optionsLineEdit.setText(basename(self.options_file))
 
     def pick_toppings(self, toppings, num_toppings):
         toppings = list(toppings)
