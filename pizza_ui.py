@@ -32,6 +32,7 @@ class Ui_Form(object):
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame = QtWidgets.QFrame(Form)
+        self.frame.setStyleSheet("background-color: rgb(197, 77, 0);")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -52,13 +53,14 @@ class Ui_Form(object):
         self.optionsLineEdit.setObjectName("optionsLineEdit")
         self.horizontalLayout.addWidget(self.optionsLineEdit)
         self.browseButton = QtWidgets.QPushButton(self.frame)
-        self.browseButton.setStyleSheet("background-color: rgb(255, 171, 102);\n"
+        self.browseButton.setStyleSheet("background-color: rgb(255, 173, 73);\n"
 "color: rgb(0, 0, 0)")
         self.browseButton.setObjectName("browseButton")
         self.horizontalLayout.addWidget(self.browseButton)
         self.formLayout.setLayout(0, QtWidgets.QFormLayout.SpanningRole, self.horizontalLayout)
         self.verticalLayout.addWidget(self.frame)
         self.frame_3 = QtWidgets.QFrame(Form)
+        self.frame_3.setStyleSheet("background-color: rgb(197, 77, 0);")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
@@ -102,6 +104,7 @@ class Ui_Form(object):
         self.gridLayout.addLayout(self.horizontalLayout_6, 0, 0, 1, 1)
         self.verticalLayout.addWidget(self.frame_3)
         self.frame_5 = QtWidgets.QFrame(Form)
+        self.frame_5.setStyleSheet("background-color: rgb(197, 77, 0);")
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
@@ -142,14 +145,15 @@ class Ui_Form(object):
         font.setBold(True)
         font.setWeight(75)
         self.randomizeButton.setFont(font)
-        self.randomizeButton.setStyleSheet("background-color: rgb(255, 171, 102);\n"
-"color: rgb(0, 0, 0)\n"
+        self.randomizeButton.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(255, 173, 73);\n"
 "")
         self.randomizeButton.setObjectName("randomizeButton")
         self.verticalLayout.addWidget(self.randomizeButton)
         self.horizontalLayout_7.addLayout(self.verticalLayout)
         self.frame_2 = QtWidgets.QFrame(Form)
         self.frame_2.setMaximumSize(QtCore.QSize(380, 16777215))
+        self.frame_2.setStyleSheet("background-color: rgb(197, 77, 0);")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
