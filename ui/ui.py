@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'pizza_ui.ui'
+# Form implementation generated from reading ui file 'ui/ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.1
 #
@@ -15,11 +15,11 @@ class Ui_Form(object):
         Form.setMinimumSize(QtCore.QSize(727, 224))
         Form.setMaximumSize(QtCore.QSize(727, 224))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("icons8-pizza-80.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/icons8-pizza-80.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form.setWindowIcon(icon)
         Form.setStyleSheet("background-color: rgb(255, 124, 16);\n"
-"QLabel#label_9 {\n"
-"  color: rgb(0, 0, 0);\n"
+"QLabel {\n"
+"  color: rgb(255, 255, 255);\n"
 "}")
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout(Form)
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
@@ -44,6 +44,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_6.setObjectName("label_6")
         self.horizontalLayout.addWidget(self.label_6)
         self.optionsLineEdit = QtWidgets.QLineEdit(self.frame)
@@ -74,6 +75,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label.setFont(font)
+        self.label.setStyleSheet("color: rgb(255, 255, 255);")
         self.label.setObjectName("label")
         self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
         self.crustLineEdit = QtWidgets.QLineEdit(self.frame_3)
@@ -91,6 +93,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_2.setFont(font)
+        self.label_2.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_2.setObjectName("label_2")
         self.formLayout_4.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_2)
         self.cheeseLevelLineEdit = QtWidgets.QLineEdit(self.frame_3)
@@ -116,6 +119,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_3.setFont(font)
+        self.label_3.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_4.addWidget(self.label_3)
         self.sauceLevelLineEdit = QtWidgets.QLineEdit(self.frame_5)
@@ -162,6 +166,8 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label_9.setFont(font)
+        self.label_9.setStyleSheet("color: rgb(255, 255, 255);\n"
+"")
         self.label_9.setObjectName("label_9")
         self.gridLayout_3.addWidget(self.label_9, 0, 0, 1, 1)
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
@@ -169,6 +175,7 @@ class Ui_Form(object):
         self.formLayout_3 = QtWidgets.QFormLayout()
         self.formLayout_3.setObjectName("formLayout_3")
         self.label_7 = QtWidgets.QLabel(self.frame_2)
+        self.label_7.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_7.setObjectName("label_7")
         self.formLayout_3.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_7)
         self.toppingNumSelect = QtWidgets.QSpinBox(self.frame_2)
@@ -187,6 +194,7 @@ class Ui_Form(object):
         self.formLayout_2 = QtWidgets.QFormLayout()
         self.formLayout_2.setObjectName("formLayout_2")
         self.label_8 = QtWidgets.QLabel(self.frame_2)
+        self.label_8.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_8.setObjectName("label_8")
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_8)
         self.maxToppingsLineEdit = QtWidgets.QLineEdit(self.frame_2)
@@ -211,14 +219,7 @@ class Ui_Form(object):
         self.toppingsListWidget.setObjectName("toppingsListWidget")
         self.gridLayout_3.addWidget(self.toppingsListWidget, 2, 0, 1, 1)
         self.horizontalLayout_7.addWidget(self.frame_2)
-        self.frame.raise_()
         self.frame_2.raise_()
-        self.frame_5.raise_()
-        self.crustLineEdit.raise_()
-        self.cheeseLevelLineEdit.raise_()
-        self.label_2.raise_()
-        self.cheeseLevelLineEdit.raise_()
-        self.frame_3.raise_()
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
