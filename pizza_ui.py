@@ -146,8 +146,7 @@ class Ui_Form(object):
         font.setWeight(75)
         self.randomizeButton.setFont(font)
         self.randomizeButton.setStyleSheet("color: rgb(0, 0, 0);\n"
-"background-color: rgb(255, 173, 73);\n"
-"")
+"background-color: rgb(255, 173, 73);")
         self.randomizeButton.setObjectName("randomizeButton")
         self.verticalLayout.addWidget(self.randomizeButton)
         self.horizontalLayout_7.addLayout(self.verticalLayout)
@@ -232,7 +231,7 @@ class Ui_Form(object):
         self.label.setText(_translate("Form", "Crust"))
         self.label_2.setText(_translate("Form", "Cheese Level"))
         self.label_3.setText(_translate("Form", "Sauce"))
-        self.randomizeButton.setText(_translate("Form", "Random Pizza!"))
+        self.randomizeButton.setText(_translate("Form", "Randomize"))
         self.label_9.setText(_translate("Form", "Toppings"))
         self.label_7.setText(_translate("Form", "Chosen:"))
         self.label_8.setText(_translate("Form", "Max Available:"))

@@ -260,11 +260,10 @@ color: rgb(0, 0, 0);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(255, 173, 73);
-</string>
+background-color: rgb(255, 173, 73);</string>
        </property>
        <property name="text">
-        <string>Random Pizza!</string>
+        <string>Randomize</string>
        </property>
       </widget>
      </item>

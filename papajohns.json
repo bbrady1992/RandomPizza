@@ -1,0 +1,45 @@
+{
+  "toppings": [
+    "Pepperoni",
+    "Spicy Italian Sausage",
+    "Beef",
+    "Bacon",
+    "Sausage",
+    "Anchovies",
+    "Canadian Bacon",
+    "Grilled Chicken",
+    "Cheddar Cheese",
+    "Parmesan Romano",
+    "Extra Cheese",
+    "3-Cheese Blend",
+    "Mushrooms",
+    "Roma Tomatoes",
+    "Pineapple",
+    "Onions",
+    "Black Olives",
+    "Jalapeno Peppers",
+    "Banana Peppers",
+    "Green Peppers"
+  ],
+  "crusts": [
+    "Pan",
+    "Original",
+    "Thin",
+    "Gluten-Free"
+  ],
+  "sauce": [
+    "Original",
+    "BBQ"
+  ],
+  "sauce level": [
+    "None",
+    "Light",
+    "Normal",
+    "Extra"
+  ],
+  "cheese level": [
+    "None",
+    "Light",
+    "Normal"
+  ]
+}
