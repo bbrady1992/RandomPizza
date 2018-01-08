@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>727</width>
-    <height>224</height>
+    <height>500</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -35,73 +35,287 @@ QLabel {
   color: rgb(255, 255, 255);
 }</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_7">
-   <item>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
    </item>
-   <item>
+   <item row="0" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_3"/>
    </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
+   <item row="0" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
      <item>
-      <widget class="QFrame" name="frame">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(197, 77, 0);</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QFormLayout" name="formLayout">
-        <item row="0" column="0" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QLabel" name="label_6">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="text">
-             <string>Options File</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="optionsLineEdit">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(197, 77, 0);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Options File</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="optionsLineEdit">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="browseButton">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 173, 73);
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="browseButton">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 173, 73);
 color: rgb(0, 0, 0)</string>
-            </property>
-            <property name="text">
-             <string>Browse...</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
+                </property>
+                <property name="text">
+                 <string>Browse...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(197, 77, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout_5">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Crust</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="crustLineEdit">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="maximumSize">
+              <size>
+               <width>220</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(197, 77, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <layout class="QFormLayout" name="formLayout_4">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Cheese Level</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="cheeseLevelLineEdit">
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(197, 77, 0);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Sauce</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="sauceLevelLineEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>70</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>70</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="sauceLineEdit">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="randomizeButton">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 173, 73);</string>
+         </property>
+         <property name="text">
+          <string>Randomize</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QFrame" name="frame_3">
+      <widget class="QFrame" name="frame_2">
+       <property name="maximumSize">
+        <size>
+         <width>380</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(197, 77, 0);</string>
        </property>
@@ -111,64 +325,95 @@ color: rgb(0, 0, 0)</string>
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <layout class="QGridLayout" name="gridLayout">
+       <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+</string>
+          </property>
+          <property name="text">
+           <string>Toppings</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
-           <layout class="QFormLayout" name="formLayout_5">
+           <layout class="QFormLayout" name="formLayout_3">
             <item row="0" column="0">
-             <widget class="QLabel" name="label">
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
+             <widget class="QLabel" name="label_7">
               <property name="styleSheet">
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string>Crust</string>
+               <string>Chosen:</string>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLineEdit" name="crustLineEdit">
-              <property name="styleSheet">
-               <string notr="true">QLineEdit {
-	background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}</string>
+             <widget class="QSpinBox" name="toppingNumSelect">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
               </property>
-              <property name="readOnly">
-               <bool>true</bool>
+              <property name="minimumSize">
+               <size>
+                <width>51</width>
+                <height>29</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>51</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
               </property>
              </widget>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QFormLayout" name="formLayout_4">
+           <layout class="QFormLayout" name="formLayout_2">
             <item row="0" column="0">
-             <widget class="QLabel" name="label_2">
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
+             <widget class="QLabel" name="label_8">
               <property name="styleSheet">
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string>Cheese Level</string>
+               <string>Max Available:</string>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLineEdit" name="cheeseLevelLineEdit">
+             <widget class="QLineEdit" name="maxToppingsLineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>51</width>
+                <height>29</height>
+               </size>
+              </property>
               <property name="maximumSize">
                <size>
-                <width>100</width>
-                <height>16777215</height>
+                <width>51</width>
+                <height>29</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -184,244 +429,30 @@ color: rgb(0, 0, 0);</string>
           </item>
          </layout>
         </item>
-       </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QFrame" name="frame_5">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(197, 77, 0);</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QLabel" name="label_3">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="text">
-             <string>Sauce</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="sauceLevelLineEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>70</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>70</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
+        <item row="2" column="0">
+         <widget class="QListWidget" name="toppingsListWidget">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);</string>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="sauceLineEdit">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
         </item>
        </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="randomizeButton">
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(255, 173, 73);</string>
-       </property>
-       <property name="text">
-        <string>Randomize</string>
-       </property>
       </widget>
      </item>
     </layout>
    </item>
-   <item>
-    <widget class="QFrame" name="frame_2">
-     <property name="maximumSize">
-      <size>
-       <width>380</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(197, 77, 0);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_9">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-</string>
-        </property>
-        <property name="text">
-         <string>Toppings</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
-        <item>
-         <layout class="QFormLayout" name="formLayout_3">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_7">
-            <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="text">
-             <string>Chosen:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QSpinBox" name="toppingNumSelect">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>51</width>
-              <height>29</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>51</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QFormLayout" name="formLayout_2">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_8">
-            <property name="styleSheet">
-             <string notr="true">color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="text">
-             <string>Max Available:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="maxToppingsLineEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>51</width>
-              <height>29</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>51</width>
-              <height>29</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-      <item row="2" column="0">
-       <widget class="QListWidget" name="toppingsListWidget">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="alternatingRowColors">
-         <bool>false</bool>
-        </property>
-        <property name="sortingEnabled">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
   </layout>
   <zorder>frame_2</zorder>
   <zorder></zorder>
+  <zorder>frame_5</zorder>
+  <zorder>frame_4</zorder>
  </widget>
  <resources/>
  <connections/>
