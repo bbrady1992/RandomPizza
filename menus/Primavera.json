@@ -1,0 +1,36 @@
+{
+  "toppings": [
+    "Extra Cheese",
+    "Feta Cheese",
+    "Pepperoni",
+    "Sausage",
+    "Ground Beef",
+    "Ham",
+    "Bacon",
+    "Canadian Bacon",
+    "Anchovies",
+    "Onions",
+    "Green Peppers",
+    "Mushrooms",
+    "Black Olives",
+    "Green Olives",
+    "Tomatoes",
+    "Broccoli",
+    "Jalapeno Peppers",
+    "Banana Peppers",
+    "Roasted Red Peppers",
+    "Pineapple"    
+  ],
+  "crusts": [
+    "Hand Tossed"
+  ],
+  "sauce": [
+    "Tomato Sauce"
+  ],
+  "sauce level": [
+    "Normal"
+  ],
+  "cheese level": [
+    "Normal"
+  ]
+}
